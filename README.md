@@ -8,3 +8,5 @@ check DRIVER AND MAPPER/README.txt for features and other shit!
 Current Updated to -> 42.20-CL-58011042 -> 09.27.206 MADE IN GERMANY !
 
 "Precision made in Germany – always ahead of BE & EAC ." - Thisishusky
+
+Issues? -> Dm me on dc: Noxyftw
