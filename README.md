@@ -10,3 +10,5 @@ Current Updated to -> 42.20-CL-58011042 -> 09.27.206 MADE IN GERMANY !
 "Precision made in Germany – always ahead of BE & EAC ." - Thisishusky
 
 Issues? -> Dm me on dc: Noxyftw
+
+pictures -> https://files.catbox.moe/ki2rfk.png / https://files.catbox.moe/gyohzm.png / https://files.catbox.moe/dvlg4t.png / https://files.catbox.moe/h4gsfd.png / https://files.catbox.moe/yx34ub.png
