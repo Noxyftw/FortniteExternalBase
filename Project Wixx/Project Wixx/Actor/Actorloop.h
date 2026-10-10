@@ -116,12 +116,11 @@ inline uintptr_t decrypt_world()
     if (!memory.BaseAddress)
         return 0;
 
-    std::uint64_t encoded =
-        memory.read<std::uint64_t>(memory.BaseAddress + 0x1B2C5BA0);
+    std::uint64_t slot = memory.read<std::uint64_t>(memory.BaseAddress + offsets::World::Gworld);
 
-    std::uintptr_t world = static_cast<std::uintptr_t>(0x6501B96661E130DDULL * encoded + 0x79D95BD19230E74DULL);
+    std::uint64_t world = _byteswap_uint64(slot) + 0xC731F903ULL;
 
-    return world ? world : 0;
+    return static_cast<std::uintptr_t>(world);
 }
 
 inline void Game() {
