@@ -8,7 +8,7 @@ namespace offsets {
 
 	namespace World {
 
-		uintptr_t Gworld = 0x1BD9D378;// UWorld
+		uintptr_t Gworld = 0x1BD9B9E8;// UWorld
 		uintptr_t GEngine = 0x1BD9D378; // UWorld
 
 		uintptr_t GNames = 0x1BC4F280;  // ANoxyftwRandom
