@@ -8,20 +8,20 @@ namespace offsets {
 
 	namespace World {
 
-		uintptr_t Gworld = 0x1B1D12F8;// UWorld
-		uintptr_t GEngine = 0x1B1D2C68; // UWorld
+		uintptr_t Gworld = 0x1BD9D378;// UWorld
+		uintptr_t GEngine = 0x1BD9D378; // UWorld
 
-		uintptr_t GNames = 0x1B085580;  // ANoxyftwRandom
+		uintptr_t GNames = 0x1BC4F280;  // ANoxyftwRandom
 
-		uintptr_t GObjects = 0x1B162F40;
-		uintptr_t GObjectsCount = 0x1AC133F0; // ANoxyftwRandom 
-		uintptr_t StaticFindObject = 0x8655B3; // ANoxyftwRandom // 
-		uintptr_t StaticLoadObject = 0x3A04E; // ANoxyftwRandom
+		uintptr_t GObjects = 0x1BD2CC40;
+		uintptr_t GObjectsCount = GObjects + 0x8; // ANoxyftwRandom 
+		uintptr_t StaticFindObject = 0x696F3A; // ANoxyftwRandom // 
+		uintptr_t StaticLoadObject = 0x5A3256; // ANoxyftwRandom
 
 
-		uintptr_t ProcessEvent = 0xBEC36; // ANoxyftwRandom // NOT UPDATED!!!
-		uintptr_t BoneMatrix = 0x44026E; // ANoxyftwRandom
-		uintptr_t FNameToString = 0x4FAEE; // ANoxyftwRandom
+		uintptr_t ProcessEvent = 0x146CCC; // ANoxyftwRandom // NOT UPDATED!!!
+		uintptr_t BoneMatrix = 0x37022C; // ANoxyftwRandom
+		uintptr_t FNameToString = 0x51A82; // ANoxyftwRandom
 
 	}
 
@@ -47,18 +47,18 @@ namespace offsets {
 		uintptr_t PlayerAimOffset = 0x2340; // FortPlayerController
 
 
-		uintptr_t OwningGameInstance = 0x248; // UWorld
-		uintptr_t GameState = 0x1D0; // UWorld 
+		uintptr_t OwningGameInstance = 0x250; // UWorld
+		uintptr_t GameState = 0x1D8; // UWorld 
 		uintptr_t PlayerArray = 0x288; // AGameStateBase
 		uintptr_t NetConnection = 0x4A8;
 		uintptr_t RotationInput = NetConnection + 0x8;
 
-		uintptr_t PersistentLevel = 0x38; // UWorld
-		uintptr_t Levels = 0x1E8; // UWorld
+		uintptr_t PersistentLevel = 0x40;; // UWorld
+		uintptr_t Levels = 0x1F0; // UWorld
 
 		uintptr_t RootComponent = 0x1B0; // Actor
 		uintptr_t PawnPrivate = 0x2E8; // APlayerState
-		uintptr_t MoveIgnoreActors = 0x330; // UPrimitiveComponent
+		uintptr_t MoveIgnoreActors = 0x350; // UPrimitiveComponent
 
 		uintptr_t Killscore = 0xF80; // FortPlayerStateAthena
 		uintptr_t Mesh = 0x2F0; // USkeletalMeshComponent
@@ -71,38 +71,38 @@ namespace offsets {
 		uintptr_t RelativeRotation = 0x158; // USceneComponent
 		uintptr_t RelativeScale3D = 0x170; // USceneComponent
 		uintptr_t ComponentVelocity = 0x188; // USceneComponent 
-		uintptr_t AdditionalAimOffset = 0x2300; // FortPlayerController
+		uintptr_t AdditionalAimOffset = 0x2310; // FortPlayerController
 		uintptr_t LastRenderTime = 0x290; // USceneComponent
-		uintptr_t LocationUnderReticle = 0x21A0; // FortPlayerController
+		uintptr_t LocationUnderReticle = 0x21B0; // FortPlayerController
 		uintptr_t Spectators = 0xAC0;
 		uintptr_t SpectatorArray = 0x1838;
 
 	}
 
 	namespace Lobby {
-		uintptr_t Actors = 0x200;
+		uintptr_t Actors = 0x50;
 	}
 
 	namespace Camera {
 
 
-		uintptr_t CameraLocation = 0x170; // ANoxyftwCamera
+		uintptr_t CameraLocation = 0x178; // ANoxyftwCamera
 		uintptr_t CameraRotation = CameraLocation + 0x10; // ANoxyftwCamera
 		uintptr_t CameraFOV = 0x374; // ANoxyftwCamera
-		uintptr_t CachedViewInfoRenderedLastFrame = 0x160 + 0x20; // ANoxyftwCamera
+		uintptr_t CachedViewInfoRenderedLastFrame = 0x168 + 0x20; // ANoxyftwCamera
 
 	}
 
 	namespace Vehicle {
 
 
-		uintptr_t CurrentVehicle = 0x2C30; // FortPlayerPawn
+		uintptr_t CurrentVehicle = 0x2C60; // FortPlayerPawn
 
 	}
 
 	namespace Fov {
-		uintptr_t FOVMinimum = 0xB08; // FortPlayerController
-		uintptr_t FOVMaximum = 0xB0C; // FortPlayerController
+		uintptr_t FOVMinimum = 0x2268; // FortPlayerController
+		uintptr_t FOVMaximum = 0x226c; // FortPlayerController
 	}
 
 	namespace Weapon {
@@ -111,17 +111,17 @@ namespace offsets {
 
 
 
-		uintptr_t CurrentWeapon = 0x9D0; // FortPawn
-		uintptr_t WeaponData = 0x6D0; // FortWeapon
+		uintptr_t CurrentWeapon = 0x9A6; // FortPawn
+		uintptr_t WeaponData = 0x610; // FortWeapon
 		uintptr_t ItemName = 0x38; // UItemDefinitionBase
 
-		uintptr_t CurrentReloadDuration = 0x1158; // FortWeapon
+		uintptr_t CurrentReloadDuration = 0x1070; // FortWeapon
 
 		uintptr_t WeaponOffsetCorrection = 0x2370; // FortPlayerController
-		uintptr_t AmmoCount = 0x11C0; // FortWeapon
+		uintptr_t AmmoCount = 0x10D8; // FortWeapon
 		uintptr_t bIsReloadingWeapon = 0x379; // FortWeapon
-		uintptr_t ReloadAnimation = 0x1678; // FortWeapon
-		uintptr_t LWProjectile_ActivateRemovedTimestamp = 0x2798; // FortWeaponRanged
+		uintptr_t ReloadAnimation = 0x1618; // FortWeapon
+		uintptr_t LWProjectile_ActivateRemovedTimestamp = 0x27b8; // FortWeaponRanged
 
 
 
@@ -132,8 +132,8 @@ namespace offsets {
 
 		uintptr_t ServerWorldTimeSecondsDelta = 0x2A8; // AGameStateBase
 
-		uintptr_t LastFireTimeVerified = 0x10CC; // FortWeapon
-		uintptr_t WeaponCoreAnimation = 0x1740; // FortWeapon
+		uintptr_t LastFireTimeVerified = 0xfe4; // FortWeapon
+		uintptr_t WeaponCoreAnimation = 0x16d8; // FortWeapon
 
 		uintptr_t PrimaryPickupItemEntry = 0x368; // FortPickup
 
